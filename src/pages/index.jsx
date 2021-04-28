@@ -27,7 +27,7 @@ const IndexPage = () => (
     </div>
 
     <div className="pt-10 pb-5 px-2 sm:px-10">
-      <p className="py-72 bg-white rounded-lg shadow-2xl">
+      <p className="py-72 bg-white rounded-lg shadow-2xl ">
         Content
         <span role="img" aria-label="partying-face">
           🥳

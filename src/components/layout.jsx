@@ -2,9 +2,12 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleDoubleUp } from "@fortawesome/free-solid-svg-icons"
+
+
 import { tsParticles } from "tsparticles"
 
 import Header from "./header"
+import Footer from "./footer"
 import tsParticlesConfig from "./tsparticles.config"
 
 const Layout = ({ route, children }) => {
@@ -44,15 +47,13 @@ const Layout = ({ route, children }) => {
       <div className="relative">
         <Header route={route} />
 
-        <div className="flex flex-col z-0 pt-20">
+        <div className="flex flex-col z-0 p-0 pt-20">
           <div className="text-center flex-grow">
             <main>{children}</main>
           </div>
 
           <GoToTop />
-          <footer className="p-3 text-center bg-gray-100 w-full">
-            © {new Date().getFullYear()}, IEEE GEC Thrissur
-          </footer>
+          <Footer />
         </div>
       </div>
     </>

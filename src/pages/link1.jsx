@@ -1,5 +1,5 @@
 import * as React from "react"
-import Cardgame, {event} from "../components/events.component"
+import Cardgame, { event } from "../components/events.component"
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -41,26 +41,29 @@ const IndexPage = () => (
       </p>
     </div>
 
-    <div className="pt-10 pb-5 px-2 sm:px-10">
-      <div className="rounded-lg shadow-2xl glass-effect ">
-      <div className='ml-4 place-self-center'>
-        <Cardgame/>
-      </div>
+    <div className="pt-5 pb-10 px-2 sm:px-10 flex ">
+      <div
+        // className="flex w-full flex-wrap mt-4 mb-8 content-center"
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Cardgame />
+
+        {/* add other cards here */}
       </div>
     </div>
-
-
-        <div className="max-w-7xl justify-center">
-          <UikitCard/>
-        </div>
-
-    <div className="grid grid-cols-2 self-center"><UikitCard/></div>
-
-    <ShopCard/>
-    <UikitCard/>
-
+    <div className="pt-5 pb-10 px-2 sm:px-10">
+      <ShopCard />
+    </div>
+    <div className="pt-5 pb-10 px-2 sm:px-10">
+      <UikitCard />
+      <UikitCard />
+    </div>
   </Layout>
-
 )
 
 export default IndexPage

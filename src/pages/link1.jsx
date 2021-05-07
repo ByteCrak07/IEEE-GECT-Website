@@ -43,13 +43,7 @@ const IndexPage = () => (
 
     <div className="pt-5 pb-10 px-2 sm:px-10 flex ">
       <div
-        // className="flex w-full flex-wrap mt-4 mb-8 content-center"
-        style={{
-          width: "100%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
+      // className="flex w-full flex-wrap mt-4 mb-8 content-center"
       >
         <Cardgame />
 
@@ -60,7 +54,6 @@ const IndexPage = () => (
       <ShopCard />
     </div>
     <div className="pt-5 pb-10 px-2 sm:px-10">
-      <UikitCard />
       <UikitCard />
     </div>
   </Layout>

@@ -27,20 +27,20 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "styles.de79ee1f09d6d35ea561.css"
+    "url": "styles.54e0332e0b053ca435b9.css"
   },
   {
     "url": "framework-fe57bdecb2107d6e7372.js"
   },
   {
-    "url": "app-4d74262b61136140ff3f.js"
+    "url": "app-6535c6b3b4a8a6275dc9.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "08c831ab0412446da2681a1a0c2507b8"
+    "revision": "3951b81440c978da2e55ec32b450d7c2"
   },
   {
-    "url": "webpack-runtime-3bd1a2e5aa86f54c62c2.js"
+    "url": "webpack-runtime-e46c0ed91500ace8749c.js"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-2b7a94016c3af40b79c6.js"
@@ -51,14 +51,14 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "4fb50fc763ac40728f5a5980f50307fc"
+    "revision": "837efb0f60e16db9220c6dcebffac64a"
   },
   {
     "url": "polyfill-2555bdf27dc5b4bbbc39.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "4fac5b5b0473ab8fcacb2316c82b1968"
+    "revision": "e8499288a0b67b4de1ed771ec4835807"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -150,7 +150,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/IEEE-GECT-Website/app-4d74262b61136140ff3f.js`))) {
+  if (!resources || !(await caches.match(`/IEEE-GECT-Website/app-6535c6b3b4a8a6275dc9.js`))) {
     return await fetch(event.request)
   }
 
